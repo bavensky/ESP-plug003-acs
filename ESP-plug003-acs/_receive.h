@@ -32,7 +32,7 @@ void register_receive_hooks() {
         digitalWrite(relayPin, LOW);
         digitalWrite(LED_BUILTIN, HIGH);
         pin_state = 0;
-      }
+      }      
     }
     else if (cmd == "$/reboot") {
       ESP.reset();

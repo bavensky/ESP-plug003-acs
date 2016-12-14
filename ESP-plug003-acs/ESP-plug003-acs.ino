@@ -208,6 +208,8 @@ void loop()
   display.drawString(15, 40, "Current = ");
   display.drawString(65, 40, String(AmpsRMS));
   display.drawString(85, 40, " Amps");
+  display.drawString(30, 50, "RELAY =");
+  display.drawString(80, 50, String(pin_state));
   display.display();
 
   Serial.print(AmpsRMS);
